@@ -244,8 +244,10 @@
     <script>
         var Version = "1.0.240804";
         console.log("LICENSE: GPL-3.0, https://github.com/xiangyuecn/ACME-HTML-Web-Browser-Client/blob/main/LICENSE");
-        var donation_url1 = 'https://xiangyuecn.gitee.io/docs/about.html';
-        var donation_url2 = 'https://xiangyuecn.github.io/Docs/about.html';
+        var github_url1 = 'https://github.com/uiisc/freessl';
+        var github_url2 = 'https://github.com/uiisc/freessl';
+        var donation_url1 = 'https://crogram.org/donation.html';
+        var donation_url2 = 'https://crogram.org/donation.html';
         /***********************************
         中英对照翻译主要来自：Chrome自带翻译+百度翻译，由中文翻译成English（作者英文很菜）。
         The Chinese-English translation is mainly from: Chrome comes with translation + Baidu translation, which is translated from Chinese to English (the author's English level is very low)
@@ -271,9 +273,9 @@
             <span style="display:inline-block">
                 <span class="langCN">开源代码：</span>
                 <span class="langEN">Open source: </span>
-                <a href="https://github.com/xiangyuecn/ACME-HTML-Web-Browser-Client" target="_blank">GitHub >></a>
+                <a id="githubUrl2" target="_blank"><script>githubUrl2.href = github_url2;</script>GitHub >></a>
                 <span class="langCN">
-                    | <a href="https://gitee.com/xiangyuecn/ACME-HTML-Web-Browser-Client" target="_blank">Gitee >></a>
+                    | <a id="githubUrl1" target="_blank"><script>githubUrl2.href = github_url2;</script>Gitee >></a>
                 </span>
             </span>
 
@@ -553,9 +555,9 @@
                         <span class="langEN">Domain name to be included in the certificate:</span>
                     </div>
                     <div class="pd" style="font-size:13px;color:#aaa">
-                        <span class="langCN">一个证书可以包含多个域名（支持通配符），比如填写：<i class="i">a.com, *.a.com, b.com,
-                                *.b.com</i>；第一个域名将作为证书的通用名称（Common Name）；带通配符的域名只支持DNS验证，其他域名支持上传文件验证；注意：填了<i
-                                class="i">www.a.com</i>时，一般需要额外填上<i class="i">a.com</i>。</span>
+                        <span class="langCN">一个证书可以包含多个域名（支持通配符），比如填写：<i class="i">a.com, *.a.com, b.com,*.b.com</i>；
+                            第一个域名将作为证书的通用名称（Common Name）；带通配符的域名只支持DNS验证，其他域名支持上传文件验证；注意：
+                            填了<i class="i">www.a.com</i>时，一般需要额外填上<i class="i">a.com</i>。</span>
                         <span class="langEN">A certificate can contain multiple domain names (wildcard are supported),
                             for example, fill in: <i class="i">a.com, *.a.com, b.com, *.b.com</i>; the first domain name
                             will be used as the Common Name of the certificate; Domain names with wildcard only support
